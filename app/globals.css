@@ -1,1 +1,114 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: transparent;
+}
+
+body {
+  color: white;
+  font-weight: 300;
+}
+
+:root {
+  background-color: transparent;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 6rem;
+  margin: 0.25rem 0 0;
+  text-align: center;
+}
+
+h2,
+.lede {
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background img {
+  width: 100%;
+  height: 100dvh;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+.background .bg-mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .background .bg-desktop {
+    display: none;
+  }
+
+  .background .bg-mobile {
+    display: block;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  color: #111;
+  border-radius: 4px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 200ms ease-out;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link.active {
+  border-bottom-color: white;
+}
+
+.hobby-tabs .tab {
+  color: white;
+  font-weight: 300;
+}
+
+.hobby-tabs .tab-active {
+  color: white;
+}

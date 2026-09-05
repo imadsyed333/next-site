@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160" role="img" aria-label="Samosa Stuff">
+  <rect width="480" height="160" fill="#f4e6c3"/>
+  <polygon points="240,28 330,132 150,132" fill="#d4a017"/>
+  <text x="240" y="150" text-anchor="middle" fill="#3b2a12" font-family="Inter, sans-serif" font-size="16" font-weight="400">Samosa Stuff</text>
+</svg>
