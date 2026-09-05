@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     description,
     type: "website",
   },
+  appleWebApp: {
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export const viewport: Viewport = {

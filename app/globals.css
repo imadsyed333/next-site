@@ -6,15 +6,22 @@
 }
 
 html {
-  background-color: #111;
+  height: 100%;
+  height: -webkit-fill-available;
+  height: 100lvh;
 }
 
 html,
 body {
   margin: 0;
   min-height: 100%;
-  min-height: 100lvh;
   min-height: -webkit-fill-available;
+  min-height: 100lvh;
+  background-color: #111;
+  background-image: url("/gondolin.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
 }
 
 body {
@@ -25,11 +32,15 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 1;
   background: transparent;
   padding-top: env(safe-area-inset-top, 0px);
 }
 
 main {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
@@ -39,7 +50,7 @@ h1,
 .page-title {
   font-family: inherit;
   font-weight: 200;
-  font-size: 2.75rem;
+  font-size: 3.25rem;
   letter-spacing: 0.04em;
   margin: 0.25rem 0 0;
   text-align: center;
@@ -48,27 +59,23 @@ h1,
 
 h2,
 .lede {
-  font-weight: 200;
-  font-size: 1.125rem;
+  font-weight: 400;
+  font-size: 1.35rem;
   letter-spacing: 0.04em;
   text-align: center;
   margin: 0.5rem 0 1rem;
 }
 
 .lede {
-  font-weight: 300;
+  font-weight: 400;
   opacity: 0.75;
 }
 
 .background {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
-  width: 100%;
-  height: 100%;
-  min-height: 100lvh;
-  min-height: -webkit-fill-available;
 }
 
 .background img {
@@ -79,11 +86,28 @@ h2,
   object-position: 50% 70%;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .background {
+    top: calc(-1 * env(safe-area-inset-top, 0px));
+    bottom: calc(-1 * env(safe-area-inset-bottom, 0px));
+    width: auto;
+    height: auto;
+    min-height: calc(
+      100lvh + env(safe-area-inset-top, 0px) + env(safe-area-inset-bottom, 0px)
+    );
+  }
+}
+
 .background .bg-mobile {
   display: none;
 }
 
 @media (max-width: 700px) {
+  html,
+  body {
+    background-image: url("/gondolin-mobile.webp");
+  }
+
   .background .bg-desktop {
     display: none;
   }
@@ -94,7 +118,12 @@ h2,
 
   h1,
   .page-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  h2,
+  .lede {
+    font-size: 1.2rem;
   }
 }
 
@@ -116,7 +145,7 @@ h2,
 .wordmark {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.16em;
   text-decoration: none;
   padding-bottom: 2px;
@@ -148,7 +177,7 @@ h2,
 .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-decoration: none;
   padding-bottom: 2px;
