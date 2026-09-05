@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { PageHero } from "@/components/PageHero";
 import { Navbar } from "@/components/nav/Navbar";
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en">
       <body className={`${inter.className} text-white font-light`}>
         <div className="site">
+          <PageHero />
           <header>
             <Navbar />
           </header>
