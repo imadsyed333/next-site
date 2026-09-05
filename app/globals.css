@@ -2,7 +2,6 @@
 @plugin "daisyui";
 
 :root {
-  --chrome: #0a3a6b;
   background-color: #111;
 }
 
@@ -26,7 +25,7 @@ body {
 }
 
 header {
-  background: var(--chrome);
+  background: transparent;
   padding-top: env(safe-area-inset-top, 0px);
 }
 
@@ -114,50 +113,6 @@ h2,
   border-radius: 4px;
 }
 
-.home-intro {
-  max-width: 32rem;
-  width: 100%;
-  margin-top: 0.25rem;
-  padding: 1.5rem 1.75rem 1.75rem;
-}
-
-.home-intro .lede {
-  opacity: 1;
-  margin: 0 0 0.75rem;
-}
-
-.home-note {
-  max-width: 28rem;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  opacity: 0.8;
-}
-
-.home-cta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.75rem;
-  margin: 1.25rem 0 0;
-}
-
-.home-cta a {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
-}
-
-.home-cta a:hover {
-  color: white;
-  border-bottom-color: white;
-}
-
 .wordmark {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
@@ -175,30 +130,6 @@ h2,
 
 .wordmark.active {
   border-bottom-color: white;
-}
-
-.site-footer {
-  background: var(--chrome);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1.25rem 1.5rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
-}
-
-.site-footer-label {
-  margin: 0;
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
-
-.site-footer nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.75rem;
 }
 
 @media (min-width: 768px) {
@@ -244,12 +175,4 @@ h2,
 .nav-link.active {
   color: white;
   border-bottom-color: white;
-}
-
-.hobby-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.75rem;
-  margin: 0.5rem 0 1rem;
 }

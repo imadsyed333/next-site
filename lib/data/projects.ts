@@ -11,6 +11,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: "Civic Dashboard",
+    description:
+      "Open-source Next.js tools so Torontonians can follow City Council and act on what is coming up. Cached data fetching and empty states were the pieces I owned.",
+    imageLink: "/images/civic-dashboard.svg",
+    url: "https://github.com/civic-dashboard/civic-dashboard-web",
+    stack: ["TypeScript", "Next.js", "React", "PostgreSQL"],
+  },
+  {
     name: "CrashLog",
     description:
       "A mobile app for logging what matters after a collision — the project I'm building now.",

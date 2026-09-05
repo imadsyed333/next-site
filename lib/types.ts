@@ -14,12 +14,6 @@ export type Experience = {
   description: string;
 };
 
-export type HobbyItem = {
-  name: string;
-  imageLink: string;
-  description: string;
-};
-
 export type NavItem = {
   name: string;
   path: string;

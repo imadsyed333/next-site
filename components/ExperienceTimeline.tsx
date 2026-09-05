@@ -4,7 +4,7 @@ export function ExperienceTimeline() {
   return (
     <ol className="timeline timeline-vertical timeline-compact max-w-xl">
       {experiences.map((item, index) => (
-        <li key={item.title} className="timeline-item">
+          <li key={`${item.title}-${item.subtitle}`} className="timeline-item">
           {index > 0 ? <hr className="bg-white/70" /> : null}
           <div className="timeline-middle">
             <span className="inline-block size-3 rounded-full bg-white" />

@@ -4,7 +4,8 @@ import { projects } from "@/lib/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Selected work — traffic tools, a collision app, and a few others.",
+  description:
+    "Selected work — civic tools, traffic analytics, a collision app, and a few others.",
 };
 
 export default function ProjectsPage() {
