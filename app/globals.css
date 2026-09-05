@@ -3,11 +3,19 @@
 
 :root {
   --page-bg: #041e32;
+  --hero-top: #42b9fe;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --hero-top: #24acfd;
+  }
 }
 
 html {
   min-height: 100%;
   min-height: 100lvh;
+  background-color: var(--hero-top);
 }
 
 html,
@@ -15,12 +23,12 @@ body {
   margin: 0;
   min-height: 100%;
   min-height: 100lvh;
-  background-color: var(--page-bg);
 }
 
 body {
   color: white;
   font-weight: 300;
+  background-color: var(--page-bg);
 }
 
 header {
@@ -99,8 +107,8 @@ h2,
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(4, 30, 50, 0.28) 0%,
-    rgba(4, 30, 50, 0.12) 32%,
+    transparent 0%,
+    rgba(4, 30, 50, 0.1) 32%,
     rgba(4, 30, 50, 0.2) 62%,
     var(--page-bg) 100%
   );
