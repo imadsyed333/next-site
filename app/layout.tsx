@@ -9,18 +9,13 @@ const inter = Inter({
   display: "swap",
 });
 
-const description =
-  "Imad Syed — software developer in Toronto. Tools for cities and small businesses.";
-
 export const metadata: Metadata = {
   title: {
     default: "Imad Syed",
     template: "%s · Gondolin",
   },
-  description,
   openGraph: {
-    title: "Imad Syed",
-    description,
+    title: "Gondolin",
     type: "website",
   },
   appleWebApp: {
@@ -29,6 +24,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   viewportFit: "cover",
   themeColor: "#0a3a6b",
 };
@@ -36,7 +33,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-transparent text-white font-light`}>
+      <body
+        className={`${inter.className} bg-transparent text-white font-light`}
+      >
         <div className="background">
           <img className="bg-desktop" src="/gondolin.webp" alt="" />
           <img className="bg-mobile" src="/gondolin-mobile.webp" alt="" />

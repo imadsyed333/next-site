@@ -74,8 +74,11 @@ h2,
 .background {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100dvh;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .background img {
@@ -86,28 +89,11 @@ h2,
   object-position: 50% 70%;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .background {
-    top: calc(-1 * env(safe-area-inset-top, 0px));
-    bottom: calc(-1 * env(safe-area-inset-bottom, 0px));
-    width: auto;
-    height: auto;
-    min-height: calc(
-      100lvh + env(safe-area-inset-top, 0px) + env(safe-area-inset-bottom, 0px)
-    );
-  }
-}
-
 .background .bg-mobile {
   display: none;
 }
 
 @media (max-width: 700px) {
-  html,
-  body {
-    background-image: url("/gondolin-mobile.webp");
-  }
-
   .background .bg-desktop {
     display: none;
   }
