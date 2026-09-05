@@ -38,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       >
         <div className="background">
           <img className="bg-desktop" src="/gondolin.webp" alt="" />
-          {/* <img className="bg-mobile" src="/gondolin-mobile.webp" alt="" /> */}
+          <img className="bg-mobile" src="/gondolin-mobile.webp" alt="" />
         </div>
         <header>
           <Navbar />
