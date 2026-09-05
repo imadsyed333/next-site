@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <section className="page">
-      <h1>Projects</h1>
+      <h1 className="page-title">Projects</h1>
       <p className="lede">Click to view on GitHub.</p>
-      <div className="projects-grid mt-4 grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="projects-grid mt-4 grid w-full max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}

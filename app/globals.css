@@ -1,25 +1,45 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+:root {
+  background-color: #111;
+}
+
+html {
+  background-color: #111;
+}
+
 html,
 body {
   margin: 0;
   min-height: 100%;
-  background: transparent;
+  min-height: 100lvh;
+  min-height: -webkit-fill-available;
 }
 
 body {
   color: white;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
 }
 
-:root {
-  background-color: transparent;
+header {
+  padding-top: env(safe-area-inset-top, 0px);
 }
 
-h1 {
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+h1,
+.page-title {
+  font-family: inherit;
   font-weight: 200;
-  font-size: 6rem;
+  font-size: 2.75rem;
+  letter-spacing: 0.04em;
   margin: 0.25rem 0 0;
   text-align: center;
 }
@@ -27,9 +47,15 @@ h1 {
 h2,
 .lede {
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.04em;
   text-align: center;
   margin: 0.5rem 0 1rem;
+}
+
+.lede {
+  font-weight: 300;
+  opacity: 0.75;
 }
 
 .background {
@@ -37,11 +63,16 @@ h2,
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  width: 100%;
+  height: 100%;
+  min-height: 100lvh;
+  min-height: -webkit-fill-available;
 }
 
 .background img {
+  display: block;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 70%;
 }
@@ -59,8 +90,9 @@ h2,
     display: block;
   }
 
-  h1 {
-    font-size: 3.5rem;
+  h1,
+  .page-title {
+    font-size: 2rem;
   }
 }
 
@@ -68,13 +100,14 @@ h2,
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 1.5rem 3rem;
+  padding: 1rem 1.5rem calc(3rem + env(safe-area-inset-bottom, 0px));
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  color: #111;
+  background: rgba(10, 10, 10, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: rgba(255, 255, 255, 0.92);
   border-radius: 4px;
 }
 
@@ -92,23 +125,28 @@ h2,
 }
 
 .nav-link {
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 .nav-link.active {
+  color: white;
   border-bottom-color: white;
 }
 
-.hobby-tabs .tab {
-  color: white;
-  font-weight: 300;
-}
-
-.hobby-tabs .tab-active {
-  color: white;
+.hobby-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 0.5rem 0 1rem;
 }

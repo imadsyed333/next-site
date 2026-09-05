@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/nav/Navbar";
 import "./globals.css";
@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     template: "%s · Gondolin",
   },
   description: "Imad's personal website",
+};
+
+export const viewport: Viewport = {
+  viewportFit: "cover",
+  themeColor: "#111111",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

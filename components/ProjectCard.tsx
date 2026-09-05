@@ -12,7 +12,7 @@ export function ProjectCard({ project }: { project: Project }) {
         className="flex h-full flex-col text-inherit no-underline"
       >
         {project.imageLink ? (
-          <figure className="relative h-40 w-full bg-white/40">
+          <figure className="relative h-40 w-full bg-white/10">
             {project.imageLink.endsWith(".svg") ? (
               <img
                 src={project.imageLink}
@@ -38,10 +38,10 @@ export function ProjectCard({ project }: { project: Project }) {
           </div>
         )}
         <div className="card-body">
-          <h2 className="card-title text-left text-xl font-normal text-[#111]">
+          <h2 className="card-title text-left text-xl font-normal text-white/90">
             {project.name}
           </h2>
-          <p className="text-sm leading-relaxed text-[#111]">
+          <p className="text-sm leading-relaxed text-white/80">
             {project.description}
           </p>
           <StackList stack={project.stack} />

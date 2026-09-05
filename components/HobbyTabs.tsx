@@ -9,9 +9,9 @@ const tabs = [
 
 export function HobbyTabs() {
   return (
-    <nav className="hobby-tabs tabs tabs-border" aria-label="Hobby categories">
+    <nav className="hobby-tabs" aria-label="Hobby categories">
       {tabs.map((tab) => (
-        <NavLink key={tab.path} href={tab.path} className="tab">
+        <NavLink key={tab.path} href={tab.path}>
           {tab.name}
         </NavLink>
       ))}

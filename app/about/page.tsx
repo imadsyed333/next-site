@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section className="page">
-      <h1>About</h1>
+      <h1 className="page-title">About</h1>
       <p className="lede">A little bit about me.</p>
       <div className="about-grid mt-4 grid w-full max-w-6xl grid-cols-1 items-start gap-8 lg:grid-cols-2">
         <article className="glass fade-in about-copy p-6 leading-relaxed">

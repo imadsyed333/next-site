@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function HobbiesLayout({ children }: LayoutProps<"/hobbies">) {
   return (
     <section className="page">
-      <h1>Hobbies</h1>
+      <h1 className="page-title">Hobbies</h1>
       <p className="lede">A whole lot more about me.</p>
       <HobbyTabs />
       {children}
