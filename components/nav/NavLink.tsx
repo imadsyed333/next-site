@@ -18,11 +18,9 @@ export function NavLink({
       ? pathname === "/"
       : pathname === href || pathname.startsWith(`${href}/`);
 
-  const classes = className
-    ? `${className}${active ? " tab-active" : ""}`
-    : active
-      ? "nav-link active"
-      : "nav-link";
+  const classes = [className || "nav-link", active ? "active" : ""]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <Link href={href} className={classes}>

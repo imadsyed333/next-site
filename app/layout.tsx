@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/nav/Navbar";
 import "./globals.css";
 
@@ -9,17 +10,25 @@ const inter = Inter({
   display: "swap",
 });
 
+const description =
+  "Imad Syed — software developer in Toronto. Tools for cities and small businesses.";
+
 export const metadata: Metadata = {
   title: {
-    default: "Gondolin",
+    default: "Imad Syed",
     template: "%s · Gondolin",
   },
-  description: "Imad's personal website",
+  description,
+  openGraph: {
+    title: "Imad Syed",
+    description,
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
   viewportFit: "cover",
-  themeColor: "#111111",
+  themeColor: "#0a3a6b",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -34,6 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Navbar />
         </header>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

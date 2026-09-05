@@ -3,34 +3,28 @@ import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "A little bit about me.",
+  description:
+    "Imad Syed — software for cities, data tools, and the web.",
 };
 
 export default function AboutPage() {
   return (
     <section className="page">
       <h1 className="page-title">About</h1>
-      <p className="lede">A little bit about me.</p>
+      <p className="lede">What I work on, and where I learned it.</p>
       <div className="about-grid mt-4 grid w-full max-w-6xl grid-cols-1 items-start gap-8 lg:grid-cols-2">
         <article className="glass fade-in about-copy p-6 leading-relaxed">
           <p className="mb-4">
-            My name is Imad. I&apos;m a software developer specialized in
-            building web applications using modern technologies such as React,
-            Node.js, and TypeScript. I have a passion for creating clean,
-            efficient, and user-friendly applications that solve real-world
-            problems.
+            I&apos;m Imad. I write software, mostly for the web.
           </p>
           <p className="mb-4">
-            My most recent experience was as a Software Developer Co-op with
-            the City of Toronto&apos;s Transportation Services, as part of
-            their Data Analytics team. There, I contributed to various
-            internal tools and applications, streamlining data collection and
-            analysis processes for transportation planning and operations.
+            A year with Toronto&apos;s Transportation Services data team taught
+            me to care about the boring parts — collection, analysis, the tools
+            planners actually open. That&apos;s still the kind of work I want.
           </p>
           <p>
-            When I&apos;m not coding, I like to read, make stuff in Blender,
-            and play football (soccer). Check out my Hobbies page to learn
-            more.
+            When I&apos;m not coding I read and play football. The Hobbies page
+            is the short list of what I keep coming back to.
           </p>
         </article>
         <ExperienceTimeline />

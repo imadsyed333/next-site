@@ -5,6 +5,9 @@ export function Navbar() {
   return (
     <nav className="navbar justify-center bg-transparent shadow-none min-h-16 py-0">
       <div className="flex h-full items-center justify-center gap-6 sm:gap-10">
+        <NavLink href="/" className="wordmark">
+          Gondolin
+        </NavLink>
         {navItems.map((item) => (
           <NavLink key={item.path} href={item.path}>
             {item.name}

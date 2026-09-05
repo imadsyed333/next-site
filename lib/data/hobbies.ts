@@ -12,12 +12,6 @@ export const books: HobbyItem[] = [
     imageLink: "https://m.media-amazon.com/images/I/91i55X-p7SL._SL1500_.jpg",
   },
   {
-    name: "Legend of the Galactic Heroes",
-    description:
-      "Basically Star Wars but with more nuance, depth, and strangely more epic?",
-    imageLink: "https://m.media-amazon.com/images/I/8155PbG1znL._SL1500_.jpg",
-  },
-  {
     name: "The Thrawn Trilogy",
     description:
       "The most politically nuanced Star Wars story I have read. Grand Admiral Thrawn is probably the most terrifying villain in the Star Wars universe. Yes, even more than Darth Vader.",
@@ -40,23 +34,10 @@ export const movies: HobbyItem[] = [
       "An underrated gem of a trilogy. I love how it takes a concept as insane as talking apes and uses it to explore deep philosophical questions about humanity.",
   },
   {
-    name: "The Dark Knight",
-    imageLink:
-      "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
-    description: "Joker causing chaos never gets old.",
-  },
-  {
     name: "Interstellar",
     imageLink:
       "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_.jpg",
     description: "A hauntingly beautiful depiction of the cosmos.",
-  },
-  {
-    name: "Legend of the Galactic Heroes",
-    imageLink:
-      "https://m.media-amazon.com/images/M/MV5BM2UxMDkxM2ItYTNmNS00MjJjLWEyZDQtOTdhNDRhMTg1ZTgwXkEyXkFqcGc@._V1_.jpg",
-    description:
-      "The books were already great, but the added details, stylized animation, and epic space battles made this adaptation a masterpiece.",
   },
 ];
 
@@ -76,6 +57,13 @@ export const shows: HobbyItem[] = [
       "Although the animation is dated, it still manages to create an immersive fantasy world. A hidden gem for fantasy lovers.",
   },
   {
+    name: "Legend of the Galactic Heroes",
+    imageLink:
+      "https://m.media-amazon.com/images/M/MV5BM2UxMDkxM2ItYTNmNS00MjJjLWEyZDQtOTdhNDRhMTg1ZTgwXkEyXkFqcGc@._V1_.jpg",
+    description:
+      "The books were already great, but the added details, stylized animation, and epic space battles made this adaptation a masterpiece.",
+  },
+  {
     name: "Orb: On the Movements of the Earth",
     imageLink:
       "https://m.media-amazon.com/images/M/MV5BNjRmMThlN2EtYTM0Ni00MjBjLWFmZmMtOGYxZWI1MzUzNzJhXkEyXkFqcGc@._V1_.jpg",
@@ -85,11 +73,6 @@ export const shows: HobbyItem[] = [
 ];
 
 export const games: HobbyItem[] = [
-  {
-    name: "Jedi: Fallen Order",
-    imageLink: "https://m.media-amazon.com/images/I/811QT4PJSKL.jpg",
-    description: "I wish Star Wars made more stories like this.",
-  },
   {
     name: "Mass Effect",
     imageLink: "https://m.media-amazon.com/images/I/61YxWTYzPVL.jpg",
@@ -108,18 +91,5 @@ export const games: HobbyItem[] = [
       "https://m.media-amazon.com/images/M/MV5BMzFiM2Y3NmMtNDY3MC00MThhLWFhNmYtZjIzMDNjZmNhMTdhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     description:
       "Best combat system in any game I've played. Actually felt like I was dueling with real swords.",
-  },
-  {
-    name: "Middle Earth: Shadow of Mordor",
-    imageLink:
-      "https://m.media-amazon.com/images/M/MV5BM2Y1MWJiZTktZGUyYS00ZGM4LWEzYmQtM2ZkMzY1ZGE5YWM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    description:
-      "Had a lot of fun (and pain) with the Nemesis system. Fighting Sauron as Celebrimbor was epic too.",
-  },
-  {
-    name: "Batman: Arkham Knight",
-    imageLink:
-      "https://m.media-amazon.com/images/I/816oXOwmI5L._AC_UF894,1000_QL80_.jpg",
-    description: "This might just be my favourite Batman game.",
   },
 ];

@@ -3,16 +3,22 @@ import { StackList } from "@/components/StackList";
 import type { Project } from "@/lib/types";
 
 export function ProjectCard({ project }: { project: Project }) {
+  const featured = Boolean(project.featured);
+
   return (
-    <article className="card glass fade-in h-full overflow-hidden shadow-none">
+    <article
+      className={`card glass fade-in h-full overflow-hidden shadow-none${
+        featured ? " project-featured md:col-span-2" : ""
+      }`}
+    >
       <a
         href={project.url}
         target="_blank"
         rel="noreferrer"
-        className="flex h-full flex-col text-inherit no-underline"
+        className="project-card-link flex h-full flex-col text-inherit no-underline"
       >
         {project.imageLink ? (
-          <figure className="relative h-40 w-full bg-white/10">
+          <figure className="project-figure relative h-40 w-full bg-white/10">
             {project.imageLink.endsWith(".svg") ? (
               <img
                 src={project.imageLink}
@@ -25,13 +31,17 @@ export function ProjectCard({ project }: { project: Project }) {
                 alt={project.name}
                 fill
                 className="object-contain p-4"
-                sizes="(max-width: 600px) 100vw, 25vw"
+                sizes={
+                  featured
+                    ? "(max-width: 768px) 100vw, 40vw"
+                    : "(max-width: 600px) 100vw, 50vw"
+                }
               />
             )}
           </figure>
         ) : (
           <div
-            className="flex h-40 w-full items-center justify-center bg-neutral text-neutral-content"
+            className="project-figure flex h-40 w-full items-center justify-center bg-neutral text-neutral-content"
             aria-hidden
           >
             <span className="text-2xl font-light">{project.name}</span>
