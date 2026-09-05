@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { PageHero } from "@/components/PageHero";
 import { Navbar } from "@/components/nav/Navbar";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body className={`${inter.className} text-white font-light`}>
+        <Analytics />
         <div className="site">
           <PageHero />
           <header>
