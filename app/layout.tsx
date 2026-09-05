@@ -27,31 +27,13 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#0a3a6b",
+  themeColor: "#041e32",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} bg-transparent text-white font-light`}
-      >
-        <picture className="bg-picture">
-          <source
-            media="(max-width: 700px)"
-            srcSet="/gondolin-mobile.webp"
-            width={853}
-            height={1844}
-          />
-          <img
-            src="/gondolin.webp"
-            alt=""
-            width={3840}
-            height={2160}
-            fetchPriority="high"
-            decoding="async"
-          />
-        </picture>
+      <body className={`${inter.className} text-white font-light`}>
         <div className="site">
           <header>
             <Navbar />
