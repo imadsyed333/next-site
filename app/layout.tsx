@@ -36,14 +36,28 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body
         className={`${inter.className} bg-transparent text-white font-light`}
       >
-        <div className="background">
-          <img className="bg-desktop" src="/gondolin.webp" alt="" />
-          <img className="bg-mobile" src="/gondolin-mobile.webp" alt="" />
+        <picture className="bg-picture">
+          <source
+            media="(max-width: 700px)"
+            srcSet="/gondolin-mobile.webp"
+            width={853}
+            height={1844}
+          />
+          <img
+            src="/gondolin.webp"
+            alt=""
+            width={3840}
+            height={2160}
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
+        <div className="site">
+          <header>
+            <Navbar />
+          </header>
+          <main>{children}</main>
         </div>
-        <header>
-          <Navbar />
-        </header>
-        <main>{children}</main>
       </body>
     </html>
   );
