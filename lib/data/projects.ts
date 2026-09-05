@@ -4,16 +4,14 @@ export const projects: Project[] = [
   {
     name: "MOVE",
     description:
-      "Toronto's traffic analytics app. Pagination, map–table linking, and report metadata — work I owned across the stack.",
+      "Working repository for MOVE, a project to modernize transportation data systems at the City of Toronto.",
     imageLink: "/images/toronto-logo.png",
     url: "https://github.com/CityofToronto/bdit_flashcrow",
     stack: ["JavaScript", "Vue", "Vuex / Pinia", "PostgreSQL"],
-    featured: true,
   },
   {
     name: "Civic Dashboard",
-    description:
-      "Open-source Next.js tools so Torontonians can follow City Council and act on what is coming up. Cached data fetching and empty states were the pieces I owned.",
+    description: "Making Toronto's democracy more accessible.",
     imageLink: "/images/civic-dashboard.svg",
     url: "https://github.com/civic-dashboard/civic-dashboard-web",
     stack: ["TypeScript", "Next.js", "React", "PostgreSQL"],
@@ -21,25 +19,25 @@ export const projects: Project[] = [
   {
     name: "CrashLog",
     description:
-      "A mobile app for logging what matters after a collision — the project I'm building now.",
+      "Working repository for CrashLog, a cross-platform mobile app helping drivers report car crashes",
     imageLink: "/images/crashlog-placeholder.svg",
     url: "https://github.com/imadsyed333/crashlog",
     stack: ["TypeScript", "React Native", "Zustand", "Expo"],
   },
   {
-    name: "Samosa Stuff",
+    name: "Cinelytics",
     description:
-      "Shop and checkout for a small business that sells samosas. And other stuff.",
-    imageLink: "/images/samosa-logo.svg",
-    url: "https://github.com/imadsyed333/samosa-stuff-mono",
-    stack: ["TypeScript", "React", "React Query", "Express", "Prisma"],
+      "Working repository for Cinelytics, a full-stack web app for movie analytics, and home to Kowalski, an AI movie analyst.",
+    imageLink: "/images/cinelytics-placeholder.svg",
+    url: "https://github.com/imadsyed333/cinelytics",
+    stack: ["TypeScript", "Next.js", "React", "Ollama"],
   },
   {
-    name: "EasyChef",
+    name: "CrashPoint",
     description:
-      "A recipe-sharing app from school: accounts, posts, and a Django API.",
-    imageLink: "/images/easychef-logo.png",
-    url: "https://github.com/imadsyed333/EasyChef",
-    stack: ["JavaScript", "React", "Django", "SQLite"],
+      "Working repository for CrashPoint ETL, a pipeline for processing and analyzing traffic collisions involving killed or seriously injured (KSI) persons from the City of Toronto",
+    imageLink: "/images/crashpoint-placeholder.svg",
+    url: "https://github.com/imadsyed333/crashpoint-etl",
+    stack: ["Python", "Airflow", "GeoPandas", "Docker"],
   },
 ];

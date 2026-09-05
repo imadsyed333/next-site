@@ -3,14 +3,8 @@ import { StackList } from "@/components/StackList";
 import type { Project } from "@/lib/types";
 
 export function ProjectCard({ project }: { project: Project }) {
-  const featured = Boolean(project.featured);
-
   return (
-    <article
-      className={`card glass fade-in h-full overflow-hidden shadow-none${
-        featured ? " project-featured md:col-span-2" : ""
-      }`}
-    >
+    <article className="card glass fade-in h-full overflow-hidden shadow-none">
       <a
         href={project.url}
         target="_blank"
@@ -18,7 +12,7 @@ export function ProjectCard({ project }: { project: Project }) {
         className="project-card-link flex h-full flex-col text-inherit no-underline"
       >
         {project.imageLink ? (
-          <figure className="project-figure relative h-40 w-full bg-white/10">
+          <figure className="project-figure relative h-40 w-full shrink-0 bg-white/10">
             {project.imageLink.endsWith(".svg") ? (
               <img
                 src={project.imageLink}
@@ -31,27 +25,23 @@ export function ProjectCard({ project }: { project: Project }) {
                 alt={project.name}
                 fill
                 className="object-contain p-4"
-                sizes={
-                  featured
-                    ? "(max-width: 768px) 100vw, 40vw"
-                    : "(max-width: 600px) 100vw, 50vw"
-                }
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             )}
           </figure>
         ) : (
           <div
-            className="project-figure flex h-40 w-full items-center justify-center bg-neutral text-neutral-content"
+            className="project-figure flex h-40 w-full shrink-0 items-center justify-center bg-neutral text-neutral-content"
             aria-hidden
           >
             <span className="text-2xl font-light">{project.name}</span>
           </div>
         )}
-        <div className="card-body">
+        <div className="card-body flex flex-1 flex-col">
           <h2 className="card-title text-left text-xl font-normal text-white/90">
             {project.name}
           </h2>
-          <p className="text-sm leading-relaxed text-white/80">
+          <p className="line-clamp-3 flex-1 text-sm leading-relaxed text-white/80">
             {project.description}
           </p>
           <StackList stack={project.stack} />

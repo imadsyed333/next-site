@@ -132,19 +132,6 @@ h2,
   border-bottom-color: white;
 }
 
-@media (min-width: 768px) {
-  .project-featured .project-card-link {
-    display: grid;
-    grid-template-columns: minmax(220px, 38%) 1fr;
-    align-items: stretch;
-  }
-
-  .project-featured .project-figure {
-    height: 100%;
-    min-height: 220px;
-  }
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;

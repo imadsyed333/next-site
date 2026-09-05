@@ -4,7 +4,6 @@ export type Project = {
   imageLink: string;
   url: string;
   stack: string[];
-  featured?: boolean;
 };
 
 export type Experience = {
