@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
   {
     title: "Teaching Assistant",
     subtitle: "University of Toronto",
-    period: "Jan. 2023 — Aug. 2025",
+    period: "Jan. 2023 — Apr. 2026",
     description:
       "Taught first-year calculus. Weekly tutorials and office hours. Also made sure students don't pull out their phone during an exam (ended up happening anyway).",
   },
