@@ -17,11 +17,19 @@ export const projects: Project[] = [
     stack: ["TypeScript", "Next.js", "React", "PostgreSQL"],
   },
   {
-    name: "CrashLog",
+    name: "Transitarium",
     description:
-      "Working repository for CrashLog, a cross-platform mobile app helping drivers report car crashes",
-    imageLink: "/images/crashlog-placeholder.svg",
-    url: "https://github.com/imadsyed333/crashlog",
+      "Working repository for Transitarium, a formicarium (ant farm) for TTC buses.",
+    imageLink: "/images/transitarium-placeholder.svg",
+    url: "https://github.com/imadsyed333/bus-ro-dah",
+    stack: ["TypeScript", "Vue", "Nuxt", "Leaflet"],
+  },
+  {
+    name: "CrashPad",
+    description:
+      "Working repository for CrashPad, a Next.js PWA helping drivers report car crashes.",
+    imageLink: "/images/crashpad-banner.webp",
+    url: "https://github.com/imadsyed333/crashpad",
     stack: ["TypeScript", "React Native", "Zustand", "Expo"],
   },
   {

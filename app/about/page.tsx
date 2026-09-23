@@ -4,8 +4,7 @@ import { socials } from "@/lib/data/contact";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Imad Syed — software for cities, data tools, and the web.",
+  description: "Imad Syed — software for cities, data tools, and the web.",
 };
 
 export default function AboutPage() {
@@ -16,24 +15,25 @@ export default function AboutPage() {
       <div className="about-grid mt-4 grid w-full max-w-6xl grid-cols-1 items-start gap-8 lg:grid-cols-2">
         <article className="glass fade-in about-copy p-6 leading-relaxed">
           <p className="mb-4">
-            I&apos;m a software developer who&apos;s passionate about solving
-            real problems. Think that&apos;s cliche? Keep reading.
+            I build software to make people&apos;s lives easier.
           </p>
           <p className="mb-4">
-            At Entries, I helped develop agents that make it much, much easier
-            to work with Quickbooks (like posting an invoice from slack using
-            natural language).
+            At Entries, I developed agentic workflows to simplify accounting
+            work with Quickbooks. Imagine posting an invoice to Quickbooks just
+            by typing in Slack, or having all your bank transactions reviewed +
+            categorized by an AI accountant.
           </p>
           <p className="mb-4">
-            At the City of Toronto, I contributed to MOVE, an open-source
-            full-stack data platform making it easier for transportation data to
-            create positive impact on Toronto&apos;s streets.
+            At the City of Toronto, I worked on MOVE, an open-source
+            transportation data platform. I've made radical changes to UI/UX to
+            help analysts make better sense of complex data, driving better
+            policy decisions for Toronto's streets.
           </p>
           <p className="mb-4">
             Most recently, I&apos;ve contributed to Civic Dashboard, an
-            open-source full-stack web app for making Toronto&apos;s democracy
-            accessible to all, especially those with no political science
-            degrees.
+            open-source civic engagement platform helping Torontonians
+            understand their city&apos;s democracy leading up to the 2026
+            municipal election.
           </p>
           <p>
             If any of this sounds interesting to you, feel free to reach out!
