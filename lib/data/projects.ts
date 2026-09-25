@@ -18,24 +18,22 @@ export const projects: Project[] = [
   },
   {
     name: "Transitarium",
-    description:
-      "Working repository for Transitarium, a formicarium (ant farm) for TTC buses.",
+    description: "A formicarium (ant farm) for TTC buses.",
     imageLink: "/images/transitarium-placeholder.svg",
     url: "https://github.com/imadsyed333/bus-ro-dah",
     stack: ["TypeScript", "Vue", "Nuxt", "Leaflet"],
   },
   {
     name: "CrashPad",
-    description:
-      "Working repository for CrashPad, a Next.js PWA helping drivers report car crashes.",
+    description: "A Next.js app helping drivers accurately report car crashes.",
     imageLink: "/images/crashpad-banner.webp",
     url: "https://github.com/imadsyed333/crashpad",
-    stack: ["TypeScript", "React Native", "Zustand", "Expo"],
+    stack: ["TypeScript", "Next.js", "Zustand"],
   },
   {
     name: "Cinelytics",
     description:
-      "Working repository for Cinelytics, a full-stack web app for movie analytics, and home to Kowalski, an AI movie analyst.",
+      "A Next.js app for using AI to understand box office performances.",
     imageLink: "/images/cinelytics-placeholder.svg",
     url: "https://github.com/imadsyed333/cinelytics",
     stack: ["TypeScript", "Next.js", "React", "Ollama"],
@@ -43,7 +41,7 @@ export const projects: Project[] = [
   {
     name: "CrashPoint",
     description:
-      "Working repository for CrashPoint ETL, a pipeline for processing and analyzing traffic collisions involving killed or seriously injured (KSI) persons from the City of Toronto",
+      "An ETL pipeline for validating geospatial data of traffic collisions involving killed or seriously injured (KSI) persons from the City of Toronto",
     imageLink: "/images/crashpoint-placeholder.svg",
     url: "https://github.com/imadsyed333/crashpoint-etl",
     stack: ["Python", "Airflow", "GeoPandas", "Docker"],
